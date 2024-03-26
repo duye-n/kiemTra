@@ -40,7 +40,7 @@ return view('layout/master');
 // return view('foods/create-food');
 // });
 
-Route::get('/getFood/{id}', [FoodController::class, 'create'])->name('create-food');
+Route::resource('foods', FoodController::class);
 
 // Route::get('/allCar', [CarController::class, 'index']);
 
